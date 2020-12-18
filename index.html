@@ -17,7 +17,8 @@
 
   
     <!-- font family link -->
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Halant:wght@300;400;500;600;700&family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet">
 
     <!-- external style sheet -->
     <link rel="stylesheet" href="css/stylesheets.css">
@@ -33,18 +34,18 @@
         <![endif]-->
   
 
-    <title>Tutor Mamello Maleka</title>
+    <title>Tutor Mamello</title>
 
     <link rel="shortcut icon" href="assests/images/servicesThree.png">
 </head>
-<body>
+<body >
 
   
  
     <!--navbar Section-->
     <div class="mobile-Nav">
     
-      <div class="container MobileView">
+      <div class="container MobileView mobile-only">
           <div class="row my-3">
             <div class="col-10 col-xl-12 MediaDiv">
       
@@ -60,10 +61,10 @@
             </div>
   
   <!-- hidden navigation menu on mobile -->
-            <div class="col-2 MobileView" >
+            <div class="col-2 MobileView mobile-only" >
            
       
-               <i class="fas fa-bars icon MobileView Bars" style="cursor:pointer" onclick="openNav()"></i>
+               <i class="fas fa-bars icon MobileView mobile-only Bars" style="cursor:pointer" onclick="openNav()"></i>
       
             </div>
           </div>
@@ -89,6 +90,7 @@
             
                 <li><a href="#AboutMeDivs">About</a></li>
                 <li><a href="#ServicesDivs">Services</a></li>
+                <li><a href="#TestimonalsDivs">Testimonals</a></li>
                 <li><a href="#contactDivs">Contact</a></li>
               </ul>
             </div>
@@ -122,6 +124,12 @@
             
         </li>
 
+        <li class="nav-item">
+            
+          <a class="nav-link" href="#TestimonalsDivs">Testimonals</a>
+        
+    </li>
+
             <li class="nav-item">
              
              
@@ -142,9 +150,11 @@
     </nav>
  </div>
 
+
+
  <!--Landing section -->
 
-  <div class="LandingSection " id="LandingSection" >
+  <div class="LandingSection" id="LandingSection" >
       <div class="container-fluid">
 
           <div class="row">
@@ -190,14 +200,14 @@
 
 
   <!-- About me section -->
-  <div class="block" id="AboutMeDivs">
+  <div class="blocked" id="AboutMeDivs">
 
     
             <!-- heading-->
             <div class="container-fluid">
 
               <br><br>
-              <h1>About me</h1>
+              <h1 class="TextHead">About me</h1>
 
             </div>
 
@@ -218,22 +228,18 @@
         <div class="col-sm-12 col-md-8 offset-md-2 col-lg-6 offset-lg-1 col-xl-5 offset-xl-2">
 
         <div class="text-center">
-              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur, dolorem? Quasi id, harum libero sint totam deserunt facilis iure! Consequatur quasi architecto corporis impedit dicta nihil aspernatur, mollitia excepturi ullam.</p>
+              <p class="TextBlock">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur, dolorem? Quasi id, harum libero sint totam deserunt facilis iure! Consequatur quasi architecto corporis impedit dicta nihil aspernatur, mollitia excepturi ullam.</p>
 
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores architecto voluptatibus, sapiente nobis, quo dolorum vel fugiat officia reiciendis nam obcaecati nemo ipsa. Quo ut assumenda quia esse! Facilis, temporibus!</p>
+              <p class="TextBlock">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores architecto voluptatibus, sapiente nobis, quo dolorum vel fugiat officia reiciendis nam obcaecati nemo ipsa. Quo ut assumenda quia esse! Facilis, temporibus!</p>
 
 
-              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur, dolorem? Quasi id, harum libero sint totam deserunt facilis iure! Consequatur quasi architecto corporis impedit dicta nihil aspernatur, mollitia excepturi ullam.</p>
+              <p class="TextBlock">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur, dolorem? Quasi id, harum libero sint totam deserunt facilis iure! Consequatur quasi architecto corporis impedit dicta nihil aspernatur, mollitia excepturi ullam.</p>
 
               <br><br>
 
       
 
         </div>
-
-
-
-
 
         </div>
     </div>
@@ -245,320 +251,323 @@
 
 
   <!-- Services Section -->
-    <div class="services" id="ServicesDivs">
+    <div class="block" id="ServicesDivs">
         
 
-    <!-- Mobile -->
-    <div class="container-fluid">
+        <!-- Mobile -->
+            <div class="container-fluid">
 
-    <h1>Services</h1>
-          
-    <br>
+            <br><br>
 
-      
-      <div class="hide">
-
-
-
-              <div class="row ">
-                <div class="col-12 col-md-6 offset-md-1">
-                  
-                  <i class="FontIcon fas fa-bread-slice"></i>
-                </div>
-                <div class="col-12 col-md-6 offset-md-3">
-                    <h3 class="text-center">Auditing and internal control 2B</h3>
-
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae vero ut quis ducimus tenetur saepe recusandae placeat, natus adipisci debitis, fugit illo. Cum inventore officiis vitae corporis ut facere cumque?</p>
-                </div>
-              </div>
-
-              <div class="row ">
-                <div class="col-12 col-md-6 offset-md-1">
-                  
-                  <i class="FontIcon fas fa-home"></i>
-                </div>
-                <div class="col-12 col-md-6 offset-md-3">
-                  <h3 class="text-center">Business law 1B</h3>
-
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae vero ut quis ducimus tenetur saepe recusandae placeat, natus adipisci debitis, fugit illo. Cum inventore officiis vitae corporis ut facere cumque?</p>
-                </div>
-              </div>
-
-              <div class="row">
-                      <div class="col-12 col-md-6 offset-md-1">
-                        
-                        <i class="FontIcon fas fa-baby"></i>
-                      
-                      </div>
-                      <div class="col-12 col-md-6 offset-md-3">
-                        <h3 class="text-center">Cost and financial management 2B</h3>
-
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae vero ut quis ducimus tenetur saepe recusandae placeat, natus adipisci debitis, fugit illo. Cum inventore officiis vitae corporis ut facere cumque?</p>
-                      </div>
-                </div>
-
-                <div class="row">
-                    <div class="col-12 col-md-6 offset-md-1">
+              <h1>Services</h1>
                     
-                      <i class="FontIcon fas fa-book-medical"></i>
-                    
-                    </div>
-                    <div class="col-12 col-md-6 offset-md-3">
-                      <h3 class="text-center">Financial accounting 2B</h3>
-
-                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae vero ut quis ducimus tenetur saepe recusandae placeat, natus adipisci debitis, fugit illo. Cum inventore officiis vitae corporis ut facere cumque?</p>
-                    </div>
-                </div>
               
-                <div class="row ">
-                <div class="col-12 col-md-6 offset-md-1">
-                  
-                  <i class="FontIcon fas fa-pills"></i>
-                </div>
-                <div class="col-12 col-md-6 offset-md-3">
-                  <h3 class="text-center">Accounting : grade 10-12</h3>
-
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae vero ut quis ducimus tenetur saepe recusandae placeat, natus adipisci debitis, fugit illo. Cum inventore officiis vitae corporis ut facere cumque?</p>
-                </div>
-              </div>
-              
-              <div class="row ">
-                <div class="col-12 col-md-6 offset-md-1">
-                  
-                  <i class="FontIcon fas fa-user-graduate"></i>
-                </div>
-                <div class="col-12 col-md-6 offset-md-3">
-                  <h3 class="text-center">Geography</h3>
-
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae vero ut quis ducimus tenetur saepe recusandae placeat, natus adipisci debitis, fugit illo. Cum inventore officiis vitae corporis ut facere cumque?</p>
-                </div>
-              </div>
-              
-              
-              <div class="row ">
-                <div class="col-12 col-md-6 offset-md-1">
-                
-
-                  <i class="FontIcon fas fa-hand-holding-usd"></i>
-                </div>
-                <div class="col-12 col-md-6 offset-md-3">
-                  <h3 class="text-center">Mathematics: grade 7 -12</h3>
-
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae vero ut quis ducimus tenetur saepe recusandae placeat, natus adipisci debitis, fugit illo. Cum inventore officiis vitae corporis ut facere cumque?</p>
-                </div>
-              </div>
+              <div class="hi">
 
 
 
-
-
-      </div>
-
-
-    </div>
-
-    <!-- testing -->
-
-          <!-- Desktop -->
-          <section class="container-fluid hid">
-          <div class="row">
-          
-
-              <!-- Service 1 -->
-              <div class="col-12 col-lg-4 col-xl-4 ">
-                  <div class="row">
-                      <div class="col-lg-12 col-xl-12 offset-lg-1 DesktopServicesDiv">
-                          <div class="card ">
-                              
-                              <div class="card-body ServicesIcons ">
-                                  <!-- linKedIn icon -->
-                                  <div class="p">
-
-                                      
-
-                                        <i class="FontIcons fas fa-bread-slice"></i>
-                                  </div>
-                              </div>
-                          </div>
-                      </div>
-                      <div class="col-lg-12 col-xl-12">
-                        
-                        <h3 class="text-center">Auditing and internal control 2B</h3>
-
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae vero ut quis ducimus tenetur saepe recusandae placeat, natus adipisci debitis, fugit illo. Cum inventore officiis vitae corporis ut facere cumque?</p>
-                      </div>
-                  </div>
-              </div>
-
-              <!-- Service 2 -->
-              <div class="col-12 col-lg-4 col-xl-4">
-                  <div class="row">
-                      <div class="col-lg-12 col-xl-12 offset-lg-1 DesktopServicesDiv">
-                          <div class="card ">
-                              
-                              <div class="card-body ServicesIcons ">
-                                  <!-- linKedIn icon -->
-                                  <div class="s">
-                                      
-
-                                      <i class="FontIcons fas fa-home"></i>
-                                  </div>
-
-                              </div>
-                          </div>
-                      </div>
-                      <div class="col-lg-12 col-xl-12">
-                        
-                        <h3 class="text-center">Business law 1B</h3>
-
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae vero ut quis ducimus tenetur saepe recusandae placeat, natus adipisci debitis, fugit illo. Cum inventore officiis vitae corporis ut facere cumque?</p>
-                      </div>
-                  </div>
-              </div>
-
-              <!-- Service 3-->
-              <div class="col-12 col-lg-4 col-xl-4">
-                  <div class="row">
-                      <div class="col-lg-12 col-xl-12 offset-lg-1 DesktopServicesDiv">
-                          <div class="card ">
-                              
-                              <div class="card-body ServicesIcons ">
-                                  <!-- linKedIn icon -->
-                                  <div class=" bd-highlight"></div>
-                                  
-
-                                  <i class="FontIcons fas fa-baby"></i>
-                                
-
-                              </div>
-                          </div>
-                      </div>
-                      <div class="col-lg-12 col-xl-12">
-                        
-                        <h3 class="text-center">Cost and financial management 2B</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae vero ut quis ducimus tenetur saepe recusandae placeat, natus adipisci debitis, fugit illo. Cum inventore officiis vitae corporis ut facere cumque?</p>
-                      </div>
-                  </div>
-              </div>
-
-              <!-- Service 4-->
-              <div class="col-12 col-lg-4 col-xl-4">
-                  <div class="row">
-                      <div class="col-lg-12 col-xl-12 offset-lg-1 DesktopServicesDiv">
-                          <div class="card ">
-                              
-                              <div class="card-body ServicesIcons ">
-                                  <!-- linKedIn icon -->
-                                
-                                
-
-                                  <div class="c">
-                                    
-                                  <i class="FontIcons fas fa-book-medical"></i>
-                                  </div>
-                              
-
-                              </div>
-                          </div>
-                      </div>
-                      <div class="col-lg-12 col-xl-12">
-                        
-                        <h3 class="text-center">Financial accounting 2B</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae vero ut quis ducimus tenetur saepe recusandae placeat, natus adipisci debitis, fugit illo. Cum inventore officiis vitae corporis ut facere cumque?</p>
-                      </div>
-                  </div>
-              </div>
-
-
-                    <!-- Service 5-->
-                    <div class="col-12 col-lg-4 col-xl-4">
-                    <div class="row">
-                        <div class="col-lg-12 col-xl-12 offset-lg-1 DesktopServicesDiv">
-                            <div class="card ">
-                                
-                                <div class="card-body ServicesIcons ">
-                                  
-                                   <div>
-                                    <i class="FontIcons fas fa-pills"></i>
-                                   </div>
-                                  
-          
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-12 col-xl-12">
+                      <div class="row">
+                        <div class="col-12 col-md-6 offset-md-1">
                           
-                          <h3 class="text-center">Accounting : grade 10-12</h3>
+                          <i class="FontIcon fas fa-list-ol"></i>
+                        </div>
+                        <div class="col-12 col-md-6 offset-md-3">
+                            <h3 class="text-center">Auditing and internal control 2B</h3>
+
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae vero ut quis ducimus tenetur saepe recusandae placeat, natus adipisci debitis, fugit illo. Cum inventore officiis vitae corporis ut facere cumque?</p>
+                        </div>
+                      </div>
+
+                      <div class="row ">
+                        <div class="col-12 col-md-6 offset-md-1">
+                          
+                          <i class="FontIcon fas fa-user-tie"></i>
+                        </div>
+                        <div class="col-12 col-md-6 offset-md-3">
+                          <h3 class="text-center">Business law 1B</h3>
+
                           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae vero ut quis ducimus tenetur saepe recusandae placeat, natus adipisci debitis, fugit illo. Cum inventore officiis vitae corporis ut facere cumque?</p>
-
                         </div>
-                    </div>
-                </div>
-          
-                <!-- Service 6-->
-                <div class="col-12 col-lg-4 col-xl-4">
-                    <div class="row">
-                        <div class="col-5 col-lg-4  offset-lg-1 DesktopServicesDiv">
-                            <div class="card ">
-                                
-                                <div class="card-body ServicesIcons ">
-                                    
+                      </div>
 
-                                  <div class="c">
-                                    <i class="FontIcons fas fa-user-graduate"></i>
-                                  </div>
+                      <div class="row">
+                              <div class="col-12 col-md-6 offset-md-1">
                                 
-          
-                                </div>
+                                <i class="FontIcon fas fa-money-check-alt"></i>
+                              
+                              </div>
+                              <div class="col-12 col-md-6 offset-md-3">
+                                <h3 class="text-center">Cost and financial management 2B</h3>
+
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae vero ut quis ducimus tenetur saepe recusandae placeat, natus adipisci debitis, fugit illo. Cum inventore officiis vitae corporis ut facere cumque?</p>
+                              </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-12 col-md-6 offset-md-1">
+                            
+                              <i class="FontIcon fas fa-file-invoice-dollar"></i>
+                            
+                            </div>
+                            <div class="col-12 col-md-6 offset-md-3">
+                              <h3 class="text-center">Financial accounting 2B</h3>
+
+                              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae vero ut quis ducimus tenetur saepe recusandae placeat, natus adipisci debitis, fugit illo. Cum inventore officiis vitae corporis ut facere cumque?</p>
                             </div>
                         </div>
-                        <div class="col-lg-12 col-xl-12">
+                      
+                        <div class="row ">
+                        <div class="col-12 col-md-6 offset-md-1">
                           
+                          <i class="FontIcon far fa-credit-card"></i>
+                        </div>
+                        <div class="col-12 col-md-6 offset-md-3">
+                          <h3 class="text-center">Accounting : grade 10-12</h3>
+
+                          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae vero ut quis ducimus tenetur saepe recusandae placeat, natus adipisci debitis, fugit illo. Cum inventore officiis vitae corporis ut facere cumque?</p>
+                        </div>
+                      </div>
+                      
+                      <div class="row ">
+                        <div class="col-12 col-md-6 offset-md-1">
+                          
+                          <i class="FontIcon fas fa-atlas"></i>
+                        </div>
+                        <div class="col-12 col-md-6 offset-md-3">
                           <h3 class="text-center">Geography</h3>
 
                           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae vero ut quis ducimus tenetur saepe recusandae placeat, natus adipisci debitis, fugit illo. Cum inventore officiis vitae corporis ut facere cumque?</p>
-                          
                         </div>
-                    </div>
-                </div>
+                      </div>
+                      
+                      
+                      <div class="row ">
+                        <div class="col-12 col-md-6 offset-md-1">
+                        
 
-                  <!-- Service 7-->
-                <div class="col-12 col-lg-4 col-xl-4">
-                    <div class="row">
-                        <div class="col-lg-12 col-xl-12 offset-lg-1 DesktopServicesDiv">
-                            <div class="card ">
-                                
-                                <div class="card-body ServicesIcons ">
-                                  
-                                    <i class="FontIcons fas fa-hand-holding-usd"></i>
-                                
-          
-                                </div>
-                            </div>
+                          <i class="FontIcon fas fa-square-root-alt"></i>
                         </div>
-                        <div class="col-lg-12 col-xl-12">
-                          
-                          <h3 class="text-center">Mathematics: grade 7-12</h3>
+                        <div class="col-12 col-md-6 offset-md-3">
+                          <h3 class="text-center">Mathematics: grade 7 -12</h3>
 
                           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae vero ut quis ducimus tenetur saepe recusandae placeat, natus adipisci debitis, fugit illo. Cum inventore officiis vitae corporis ut facere cumque?</p>
                         </div>
-                    </div>
-                </div>
+                      </div>
 
-          </div>
 
-          </section>
+
+
+
+              </div>
+
+
+            </div>
+
+        
+
+              <!-- Desktop -->
+              <section class="container-fluid hid">
+                  <div class="row">
+                  
+
+                      <!-- Service 1 -->
+                      <div class="col-12 col-lg-4 col-xl-4 ">
+                          <div class="row">
+                              <div class="col-lg-12 col-xl-12 offset-lg-1 DesktopServicesDiv">
+                                  <div class="card ">
+                                      
+                                      <div class="card-body ServicesIcons ">
+                                          <!-- linKedIn icon -->
+                                          <div class="p">
+
+                                              
+
+                                                <i class="FontIcons fas fa-list-ol"></i>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="col-lg-12 col-xl-12">
+                                
+                                <h3 class="text-center">Auditing and internal control 2B</h3>
+
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae vero ut quis ducimus tenetur saepe recusandae placeat, natus adipisci debitis, fugit illo. Cum inventore officiis vitae corporis ut facere cumque?</p>
+                              </div>
+                          </div>
+                      </div>
+
+                      <!-- Service 2 -->
+                      <div class="col-12 col-lg-4 col-xl-4">
+                          <div class="row">
+                              <div class="col-lg-12 col-xl-12 offset-lg-1 DesktopServicesDiv">
+                                  <div class="card ">
+                                      
+                                      <div class="card-body ServicesIcons ">
+                                          <!-- linKedIn icon -->
+                                          <div class="s">
+                                              
+
+                                              <i class="FontIcons fas fa-user-tie"></i>
+                                          </div>
+
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="col-lg-12 col-xl-12">
+                                
+                                <h3 class="text-center">Business law 1B</h3>
+
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae vero ut quis ducimus tenetur saepe recusandae placeat, natus adipisci debitis, fugit illo. Cum inventore officiis vitae corporis ut facere cumque?</p>
+                              </div>
+                          </div>
+                      </div>
+
+                      <!-- Service 3-->
+                      <div class="col-12 col-lg-4 col-xl-4">
+                          <div class="row">
+                              <div class="col-lg-12 col-xl-12 offset-lg-1 DesktopServicesDiv">
+                                  <div class="card ">
+                                      
+                                      <div class="card-body ServicesIcons ">
+                                          <!-- linKedIn icon -->
+                                          <div class=" bd-highlight"></div>
+                                          
+
+                                          <i class="FontIcons fas fa-money-check-alt"></i>
+                                        
+
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="col-lg-12 col-xl-12">
+                                
+                                <h3 class="text-center">Cost and financial management 2B</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae vero ut quis ducimus tenetur saepe recusandae placeat, natus adipisci debitis, fugit illo. Cum inventore officiis vitae corporis ut facere cumque?</p>
+                              </div>
+                          </div>
+                      </div>
+
+                      <!-- Service 4-->
+                      <div class="col-12 col-lg-4 col-xl-4">
+                          <div class="row">
+                              <div class="col-lg-12 col-xl-12 offset-lg-1 DesktopServicesDiv">
+                                  <div class="card ">
+                                      
+                                      <div class="card-body ServicesIcons ">
+                                          <!-- linKedIn icon -->
+                                        
+                                        
+
+                                          <div class="c">
+                                            
+                                          <i class="FontIcons fas fa-file-invoice-dollar"></i>
+                                          </div>
+                                      
+
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="col-lg-12 col-xl-12">
+                                
+                                <h3 class="text-center">Financial accounting 2B</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae vero ut quis ducimus tenetur saepe recusandae placeat, natus adipisci debitis, fugit illo. Cum inventore officiis vitae corporis ut facere cumque?</p>
+                              </div>
+                          </div>
+                      </div>
+
+
+                            <!-- Service 5-->
+                            <div class="col-12 col-lg-4 col-xl-4">
+                            <div class="row">
+                                <div class="col-lg-12 col-xl-12 offset-lg-1 DesktopServicesDiv">
+                                    <div class="card ">
+                                        
+                                        <div class="card-body ServicesIcons ">
+                                          
+                                          <div>
+                                            <i class="FontIcons far fa-credit-card"></i>
+                                          </div>
+                                          
+                  
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-12 col-xl-12">
+                                  
+                                  <h3 class="text-center">Accounting : grade 10-12</h3>
+                                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae vero ut quis ducimus tenetur saepe recusandae placeat, natus adipisci debitis, fugit illo. Cum inventore officiis vitae corporis ut facere cumque?</p>
+
+                                </div>
+                            </div>
+                        </div>
+                  
+                        <!-- Service 6-->
+                        <div class="col-12 col-lg-4 col-xl-4">
+                            <div class="row">
+                                <div class="col-5 col-lg-4  offset-lg-1 DesktopServicesDiv">
+                                    <div class="card ">
+                                        
+                                        <div class="card-body ServicesIcons ">
+                                            
+
+                                          <div class="c">
+                                            <i class="FontIcons fas fa-atlas"></i>
+                                          </div>
+                                        
+                  
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-12 col-xl-12">
+                                  
+                                  <h3 class="text-center">Geography</h3>
+
+                                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae vero ut quis ducimus tenetur saepe recusandae placeat, natus adipisci debitis, fugit illo. Cum inventore officiis vitae corporis ut facere cumque?</p>
+                                  
+                                </div>
+                            </div>
+                        </div>
+
+                          <!-- Service 7-->
+                        <div class="col-12 col-lg-4 col-xl-4">
+                            <div class="row">
+                                <div class="col-lg-12 col-xl-12 offset-lg-1 DesktopServicesDiv">
+                                    <div class="card ">
+                                        
+                                        <div class="card-body ServicesIcons ">
+                                          
+                                            <i class="FontIcons fas fa-square-root-alt"></i>
+                                        
+                  
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-12 col-xl-12">
+                                  
+                                  <h3 class="text-center">Mathematics: grade 7-12</h3>
+
+                                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae vero ut quis ducimus tenetur saepe recusandae placeat, natus adipisci debitis, fugit illo. Cum inventore officiis vitae corporis ut facere cumque?</p>
+                                </div>
+                            </div>
+                        </div>
+
+                  </div>
+
+              </section>
     </div>
 
-    <!-- Testimonials section -->
-  <div class="block" id="TestimonalsDivs">
+    <br>
+
+
+   <!-- Testimonials section -->
+  <div class="blocked" id="TestimonalsDivs">
 
 
     <div class="container-fluid">
 
     <br>
 
-      <h1> Testimonials </h1>
+      <h1 class="TextHead"> Testimonials </h1>
 
         
 
@@ -566,18 +575,18 @@
 
         <div class="col-lg-6 col-md-6 offset-md-3 col-sm-12 col-xl-6">
 
-          <div id="myCarousel" class="carousel slide" data-ride="carousel">
+          <div id="myCarousel" class="carousel slide BackgroundCarousel" data-ride="carousel">
             <!-- Indicators -->
-            <ol class="carousel-indicators">
+            <ol class="carousel-indicators ">
               <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
               <li data-target="#myCarousel" data-slide-to="1"></li>
               <li data-target="#myCarousel" data-slide-to="2"></li>
             </ol>
           
             <!-- Wrapper for slides -->
-            <div class="carousel-inner p-5">
+            <div class="carousel-inner p-5 " id="CarText">
               <div class="item active">
-                <p> <span class="QuotationMark">&#x201C</span> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus ratione ea
+                <p class="TextBlock"> <span class="QuotationMark">&#x201C</span> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus ratione ea
 
                   <br><br>
 
@@ -588,11 +597,11 @@
                   
                 </p> 
                 <hr>
-                <h6>&#x7e;Oratile</h6>
+                <h6 class="text-center TestimonalName">&#x7e;Oratile</h6>
               </div>
           
               <div class="item">
-                <p> <span class="QuotationMark">&#x201C</span> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus ratione ea rerum, suscipit iure, doloremq 
+                <p class="TextBlock"> <span class="QuotationMark">&#x201C</span> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus ratione ea rerum, suscipit iure, doloremq 
 
                   <br><br>
 
@@ -604,11 +613,11 @@
                 </p> 
 
                 <hr>
-                <h6>&#x7e;Gontse</h6>
+                <h6 class="text-center TestimonalName">&#x7e;Gontse</h6>
               </div>
           
               <div class="item">
-                <p> <span class="QuotationMark">&#x201C</span>  provident excepturi itaque deserunt ut animi eligendi ipsam inventore sequi, nesciunt ipsum quos maiores veniam. 
+                <p class="TextBlock"> <span class="QuotationMark">&#x201C</span>  provident excepturi itaque deserunt ut animi eligendi ipsam inventore sequi, nesciunt ipsum quos maiores veniam. 
 
                   <br><br>
 
@@ -619,7 +628,7 @@
                   
                 </p> 
                 <hr>
-                <h6>&#x7e;Lerato</h6>
+                <h6 class="text-center TestimonalName">&#x7e;Lerato</h6>
               </div>
             </div>
           
@@ -644,10 +653,8 @@
 
   </div>
 
-    <!--  -->
-
   <!-- contact section -->
-  <div id="contactDivs">
+  <div id="contactDivs" class="block">
 
 
     <div class="container-fluid my-5">
@@ -693,7 +700,7 @@
   </div>
  
 
-  <footer class="block">
+  <footer class="blocked">
 
       <!-- icons -->
       <div class="container text-center">
@@ -746,7 +753,7 @@
         </div>
 
           <div class="FooterText  text-center">
-            <p class="CopyText">Tutor Mamello © 2020 Copyright | All rights reserved | Created by <a href="https://github.com/LesediMaleka/PortfolioWebsite" target="_blank"><strong class="WebsiteDeveloper">Netweb Dynamics</strong></a>
+            <p class="CopyText"> Copyright © 2020 | All rights reserved | Created by <a href="https://github.com/LesediMaleka/PortfolioWebsite" target="_blank"><strong class="WebsiteDeveloper">Netweb Dynamics - You envision. We create.</strong></a>
             
               
         
@@ -773,8 +780,8 @@
 
  
 
-  <!-- animate on scroll scripts -->
-  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+   <!-- Scroll bar -->
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 
    <!-- My script link -->
    <script src="js/script.js"></script>

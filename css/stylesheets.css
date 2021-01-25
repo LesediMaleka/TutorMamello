@@ -5,9 +5,9 @@ html{
     overflow-x: hidden;
 }
 body{
-    background: black !important;
-    font-family: 'Montserrat', sans-serif;
-    color: rgb(226, 106, 106);
+    background:  #00587a !important;
+    font-family: 'Halant', serif;
+    color: #f1f6f9;
     overflow-x: hidden; 
     overflow-y: hidden;
 }
@@ -58,38 +58,52 @@ body{
     top: 2px;
     font-weight: 900;
   }
+  /* Scroll bar */
 
   body::-webkit-scrollbar {
-    width: 0.2em;
+    width: 0.4em;
   }
   
   body::-webkit-scrollbar-thumb {
-  background-color:  #eb2893;
-  outline: 1px solid rgb(187, 166, 166);
+  background-color: #008891;
+  outline: 1px solid #fff;
   }
+
+  
+
+  
   
   /* General classes */
   h1{
       text-align: center;
-      color: #eb5e28;
+      color: #008891;
       font-weight: 200;
       font-size: 2em;
+      font-family: 'Halant', serif;
   }
+  
+.TextHead{
+  color: #e7e7de;
+
+}
   h3{
       text-align: center;
-      color: #f7931e;
+      color: #008891;
+      font-family: 'Halant', serif;
       margin-top: 5vh;
       font-weight: 200;
-      font-size: 1em;
+      font-size: 1.4em;
   }
 
  /* paragraph text for all the pages and sections */
 p{
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 250;
   line-height: 18px;
+  color:#0f3057;
   text-align: justify;
   text-size-adjust: 2px;
+  font-family: 'Nunito Sans', sans-serif;
   margin: 20px;
 }
   .MediaDiv{
@@ -100,7 +114,7 @@ p{
 .icon{
     display: inline-block;
     font-size: 1.5em;
-    border: 1.5px solid white;
+    border: 1.5px solid #e7e7de;
     border-radius: 50%;
     height: 40px;
     width: 40px;
@@ -109,10 +123,13 @@ p{
 }
 
 a{
-  color: white;
+  color: #008891;
+}
+.icon a{
+  color: #e7e7de;
 }
 a:hover{
-  color:#f7931e;
+  color:#008891;
 }
 .Desktop{
   display: none;
@@ -123,8 +140,9 @@ a:hover{
  /* burger navbar */
 .Bars{
     margin-left: -5vw;
-    padding-top: 5px;
+    padding-top: 8px;
     margin-top: 5vw;
+    border: 1px solid #e7e7de;
 }
 
 .closebtn{
@@ -169,10 +187,16 @@ a:hover{
     width: 100vw;
     height: auto;
     margin: auto;
+    color:#e7e7de !important;
     text-align: center;
-    background: rgb(41, 40, 40);
+    background: #fff;
     margin-bottom: 5vh;
 }
+.TextBlock{
+  color:#e7e7de !important;
+}
+
+
 
 /* about me section */
 .MamelloImage{
@@ -195,17 +219,29 @@ a:hover{
 }
 .FontIcon{
   padding: 20px;
-  margin-left: 35vw;
+  margin-left: 5vw;
   font-size: 2em;
   border-radius: 100%;
-  border: 1px solid red;
-  background-color: black;
+  border: 1px solid #008891;
+  background-color: #fff;
+  color:#008891;
 }
+
+ 
 
 .card{
   border: none;
-  background-color: black;
+  background-color: #fff;
 }
+
+
+.BackgroundCarousel{
+   background-color: #00587a;
+   color: #e7e7de !important;
+}
+
+
+
 
 /* Testimonials section */
 
@@ -213,7 +249,7 @@ a:hover{
   padding-bottom: -20vh;
 }
 span{
-  color: #eb2893;
+  color:#e7e7de !important;
 }
 .QuotationMark{
   font-size: 2em;
@@ -222,7 +258,7 @@ span{
 .carousel-inner{
  
   background: transparent;
-
+  color:#e7e7de !important;
   text-shadow: pink;
 }
 /* footer section */
@@ -230,9 +266,10 @@ span{
  .CopyText{
   text-align: center;
   font-size: 14px;
+  color:#e7e7de;
 }
 .WebsiteDeveloper{
-  color:#f7931e;
+  color: aqua;
 }
 /* MediaIcons for mobile device footer */
 .mediaIcons{
@@ -258,7 +295,8 @@ span{
    /* burger navbar */
   .Bars{
     margin-left: 5vw;
-    margin-top: 2vh;
+    margin-top: 3vh;
+    padding-top: 8px !important;
 
   }
 
@@ -277,9 +315,21 @@ span{
   .MamelloImage{
     margin-bottom: 2vh;
   } 
+  /* services sections */
   .ServicesIcons{
     width: 20vw;
     height: 30vh;
+  }
+  .FontIcon{
+    margin-left: 35vw;
+    margin-top: 3vh;
+  }
+  .icon{
+    padding: 4px;
+  }
+  /* testimonials section */
+  .TestimonalName{
+    padding-bottom: 2vh;
   }
  
 }
@@ -298,7 +348,7 @@ span{
   display: block;
   margin-top: 2vw;
   }  
-  .hide{
+  .hi{
     display: none;
     }
   .hid{
@@ -307,16 +357,14 @@ span{
 
   /* Desktop navbar */
   .nav-link{
-    color: pink;
+    color: #e7e7de;
     margin-left: 10px;
     font-weight: 200;
-    font-size: 0.8em;
+    font-size: 1.4em;
   }
   .nav-link:hover{
-      color: #f7931e;
-      text-shadow: 0 -1px 0 #eb5e28;
-      /* text-decoration: underline; */
-      background-color: maroon;
+    color: #00587a;
+      background-color:  #008891;
   }    
 
  
@@ -351,10 +399,11 @@ span{
     font-size: 3em;
     margin-left: 6vw;
     margin-top: 2vh;
-    color: magenta;
+    color: #008891;
     border-radius: 50%;
-    border: 1px solid lime;
+    border: 1px solid #008891;
     padding: 20px;
+     background-color: #fff;
 }
  
  }

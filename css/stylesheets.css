@@ -10,69 +10,63 @@ body{
     color: #f1f6f9;
     overflow-x: hidden; 
     overflow-y: hidden;
+    scroll-behavior: smooth;
 }
 
-/* Navbar for mobile*/
-.overlay{
-    height: 100%;
-    width: 100%;
-    display: none;
-    position: fixed;
-    z-index: 1;
-    left:-100vw;
-    top: 0;
-    left: 0;
-    background-color: rgb(41, 40, 40);
-    overflow: hidden; 
-    transition: 0.5s; 
-  }
-
-.overlay-content ul{
-   list-style: none;
- }
-
-  /* Position the content inside the overlay */
-.overlay-content {
-    position: relative;
-    top: 25%;
-    width: 100%; 
-    text-align: center; 
-    margin-top: 30px; 
+/* Navbar */
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  color: #008891;
+  background-color: rgb(215, 238, 245);
+  z-index: 50;
 }
 
-  /* The navigation links inside the overlay */
-.overlay a {
-    padding: 8px;
-    text-decoration: none;
-    font-size: 36px;
-    color: white;
-    display: block; 
-    transition: 0.3s; 
-    font-size: 1.2em;
+li {
+  float: left;
 }
 
-  /* Position the close button (top right corner) */ 
-.overlay .closebtn {
-    position: absolute;
-    right: 35px;
-    top: 2px;
-    font-weight: 900;
-  }
-  /* Scroll bar */
+li a {
+  display: block;
+  padding: 8px;
+  padding-right: 4.5vw;
+}
+.HomeLink{
+  margin-left: 1.3vw;
+}
 
+li a:hover:not(.active) {
+  background-color: aquamarine;
+}
+
+/* Navbar Icons */
+.NavbarIco{
+  margin-left: 4vw;
+}
+.NavbarIcons{
+  margin-left: 2vw;
+}
+.NavbarIcon{
+  margin-left: 4.5vw;
+}
+.NavbarIconn{
+  margin-left: 8vw;
+}
+
+/* Scroll bar */
   body::-webkit-scrollbar {
     width: 0.4em;
   }
   
   body::-webkit-scrollbar-thumb {
   background-color: #008891;
-  outline: 1px solid #fff;
   }
 
-  
-
-  
-  
   /* General classes */
   h1{
       text-align: center;
@@ -94,6 +88,7 @@ body{
       font-weight: 200;
       font-size: 1.4em;
   }
+ 
 
  /* paragraph text for all the pages and sections */
 p{
@@ -106,20 +101,17 @@ p{
   font-family: 'Nunito Sans', sans-serif;
   margin: 20px;
 }
-  .MediaDiv{
-      z-index: 20;
-  }
 
  /*media icons */
 .icon{
     display: inline-block;
-    font-size: 1.5em;
+    font-size: 1.4em;
     border: 1.5px solid #e7e7de;
     border-radius: 50%;
     height: 40px;
     width: 40px;
     text-align: center;
-    padding-top: 2px;
+    padding-top: 4px;
 }
 
 a{
@@ -131,37 +123,17 @@ a{
 a:hover{
   color:#008891;
 }
-.Desktop{
-  display: none;
-
-}
-
-/* Mobile View */
- /* burger navbar */
-.Bars{
-    margin-left: -5vw;
-    padding-top: 8px;
-    margin-top: 5vw;
-    border: 1px solid #e7e7de;
-}
-
-.closebtn{
-  margin-left: 12vw;
-  padding-top: 2px;
-  margin-top: 3vw;
-}
 
 /* Landing  section */
 .LandingSection{
-  margin-top:-25vh;
+  margin-top:-20vh;
 }
  #LandingSection{
   background-image: url(../assests/images/A.jpg) !important;
   background-repeat: no-repeat;
- width: 100%;
+  width: 100%;
   text-align: center;
 }
-
 .IntroDiv{
   color: white;
   font-weight: 350;
@@ -175,11 +147,12 @@ a:hover{
 
 .bookButton{
   color: white;
-  background-color: #eb5e28;
+  background-color: #008891;
   border-radius: 50px;
   font-weight: 600;
   width: 60vw;
   padding: 10px;
+  border: lightblue 1px solid;
 }
 
 /*Second  div */
@@ -195,17 +168,13 @@ a:hover{
 .TextBlock{
   color:#e7e7de !important;
 }
-
-
-
 /* about me section */
 .MamelloImage{
     width: 200px;
-    border: 1px solid white;
+    border: 1px solid #008891;
 }
 
 /* Services/ Subjects tutored */
-
 .hideMobile{
   display: none;
 }
@@ -226,37 +195,26 @@ a:hover{
   background-color: #fff;
   color:#008891;
 }
-
- 
-
 .card{
   border: none;
   background-color: #fff;
 }
-
-
 .BackgroundCarousel{
    background-color: #00587a;
    color: #e7e7de !important;
 }
-
-
-
-
 /* Testimonials section */
 
 .TestimonalsDivs{
   padding-bottom: -20vh;
 }
-span{
+/* span{
   color:#e7e7de !important;
-}
+} */
 .QuotationMark{
   font-size: 2em;
 }
-
 .carousel-inner{
- 
   background: transparent;
   color:#e7e7de !important;
   text-shadow: pink;
@@ -286,30 +244,42 @@ span{
  /* // -Small devices (landscape phones, 576px and up) */
  @media (min-width: 576px) and (orientation: landscape) { 
  
-   
  }
  
  /* -Medium devices (tablets or ipad) */
  @media (min-width: 768px) {
-
-   /* burger navbar */
-  .Bars{
-    margin-left: 5vw;
-    margin-top: 3vh;
-    padding-top: 8px !important;
-
+  /* Navbar */
+  li a {
+    padding:10px;
+    padding-right: 11.9vw;
+  }
+  .HomeLink{
+    margin-left: 3.4vw;
   }
 
-    /* Landing  section */
+  /* Navbar Icons */
+  .NavbarIco{
+    margin-left: 4.5vw;
+  }
+  .NavbarIcons{
+    margin-left: 1.5vw;
+  }
+  .NavbarIcon{
+    margin-left: 2.5vw;
+  }
+  .NavbarIconn{
+    margin-left: 4vw;
+  }
+  /* Landing  section */
   .LandingSection{
-    margin-top:-32vh;
+    margin-top:-24vh;
+    padding-bottom: 1.2vh;
   }
 
   .bookButton{
     width: 25vw;
   }
 
-  
   /* about me section */
  /* Tutor Mamello Maleka's image */
   .MamelloImage{
@@ -337,13 +307,12 @@ span{
  /* -Large devices (ipad pro) */
  @media (min-width: 992px) { 
 
+
   /* General classes */
   .mobile-only{
       display: none;
   }
-  .mobile-Nav{
-    display: none;
-  }
+ 
   .Desktop{
   display: block;
   margin-top: 2vw;
@@ -354,28 +323,40 @@ span{
   .hid{
     display: block;
   }
-
-  /* Desktop navbar */
-  .nav-link{
-    color: #e7e7de;
-    margin-left: 10px;
-    font-weight: 200;
-    font-size: 1.4em;
+ /* Navbar */
+  li a {
+    padding:10px;
+    padding-right: 13.2vw;
   }
-  .nav-link:hover{
-    color: #00587a;
-      background-color:  #008891;
-  }    
+  .HomeLink{
+    margin-left: 6.2vw;
+  }
 
- 
+  /* Navbar Icons */
+  .NavbarIco{
+    margin-left: 7.3vw;
+  }
+  .NavbarIcons{
+    margin-left: 1.2vw;
+  }
+  .NavbarIcon{
+    margin-left: 1.8vw;
+  }
+  .NavbarIconn{
+    margin-left: 2.7vw;
+  }
+   
   /* Landing  section */
   .LandingSection{
-    margin-top:-20vh;
+    margin-top: -12vh;
+    padding-bottom: 4vh;
+  }
+  .bookButton{
+    width: 20vw;
   }
   .IntroDiv{
     padding-top: 20vh;
   }
-
   /* About section */
   .MamelloImage{
     width: 180px;
@@ -395,26 +376,58 @@ span{
   .card{
     border: none;
   }
-.FontIcons{
-    font-size: 3em;
-    margin-left: 6vw;
-    margin-top: 2vh;
-    color: #008891;
-    border-radius: 50%;
-    border: 1px solid #008891;
-    padding: 20px;
-     background-color: #fff;
-}
- 
+
+  .FontIcons{
+      font-size: 3em;
+      margin-left: 6vw;
+      margin-top: 2vh;
+      color: #008891;
+      border-radius: 50%;
+      border: 1px solid #008891;
+      padding: 20px;
+      background-color: #fff;
+  }
+
+
+  
  }
  @media screen and (min-width: 1200px) {
-    /* media icons on the navbar */
-  .MediaDiv{
-    margin-bottom: -40vh;
-    padding-top: 50px;
-    margin-left: 15vw;
-    }
-  
+  /* Navbar */
+  li a {
+    padding:10px;
+    padding-right: 14.2vw;
+  }
+  .HomeLink{
+    margin-left: 7.8vw;
+  }
+
+  /* Navbar Icons */
+  .NavbarIco{
+    margin-left: 8.7vw;
+  }
+  .NavbarIcons{
+    margin-left: 1vw;
+  }
+  .NavbarIcon{
+    margin-left: 1.2vw;
+  }
+  .NavbarIconn{
+    margin-left: 2.2vw;
+  }
+   /* Landing  section */
+   .LandingSection{
+    margin-top: 8vh;
+    padding-bottom: 6vh;
+  }
+  .bookButton{
+    width: 15vw;
+  }
+  #IntroDiv{
+    padding-bottom: 20vh;
+  }
+  .LandingSectionButton{
+    padding-top: 8vh;
+  }
   /* about me section */
   .MamelloImage{
     width: 200px;
